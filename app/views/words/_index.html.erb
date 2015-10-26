@@ -1,0 +1,35 @@
+<div class="back-section1">
+    <div class="container-fluid max vert-pad">
+<nav  >
+  <ul type="button" class="navbar-btn">
+      <%= alphabetical_paginate @alphaParams %>
+  </ul>
+</nav>
+
+<div id="pagination_table">
+  <div class="col-md-2" ><strong>Word</strong></div>
+  <div class="col-md-10" ><strong>Definition</strong></div>
+
+  
+    <% grouped_words = @words.group_by {|w| w.word[0].upcase } %>
+  
+    <% grouped_words.each do |l, w| %>
+      <div class="col-md-12" ><h3><%= l %></h3></div>
+      <% w.each do |i| %>
+        <div class="col-md-2" ><strong><%= i.word %></strong></div>
+        <div class="col-md-10" ><p><%= i.definition %></p></div>
+        <div class="col-md-12" ><br></div>
+      <% end %>
+    <% end %>
+</div>
+</div>
+</div>
+
+
+
+
+
+<table class="table">
+  ...
+</table>
+

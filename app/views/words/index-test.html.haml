@@ -1,0 +1,35 @@
+%nav.navbar.navbar-inverse
+  %ul{:type => "button", .btn .btn-default .navbar-btn}
+    = alphabetical_paginate @alphaParams
+
+
+#pagination_table
+%table
+  %thead
+    %tr
+      %th Word
+      %th Definition
+      %th {colspan="3"}
+
+
+%tbody
+  -grouped_words = @words.group_by {|w| w.word[0].upcase }
+    -grouped_words.each do |l, w|
+      %tr
+        %td 
+          %h3 = l
+          -w.each do |i|
+            %tr
+              %td = i.word
+              %td = i.definition
+          end
+    end
+
+
+%br
+
+
+
+
+
+

@@ -1,0 +1,282 @@
+h1 {
+    color: white;
+}
+
+/* unvisited link */
+a:link {
+    color: #70d7fd;
+}
+
+/* visited link */
+a:visited {
+    color: #a1e6ff;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ffcb3f;
+}
+
+/* selected link */
+a:active {
+    color: #05b5f5;
+}
+    
+p > a {
+    text-decoration: underline;
+}
+
+
+.gradient-primary {
+    background-color:#181358;
+    background-image: -webkit-radial-gradient(0% bottom, rgba(118, 72, 160, 0.7) 0, rgba(118, 72, 160, 0) 60%), 
+        -webkit-radial-gradient(90% bottom, #523f8c 0, rgba(82, 63, 140, 0) 40%), 
+        -webkit-radial-gradient(50% top, #794aa2 0, rgba(84, 90, 182, 0) 75%),
+        -webkit-radial-gradient(right top, #794aa2 0, rgba(121, 74, 162, 0) 57%);
+    background-image:radial-gradient(at 0 bottom, rgba(118, 72, 160, 0.7) 0, rgba(118, 72, 160, 0) 60%), 
+        radial-gradient(at 90% bottom, #523f8c 0, rgba(82, 63, 140, 0) 40%), 
+        radial-gradient(at 50% top, rgba(84, 90, 182, 0.6) 0, rgba(84, 90, 182, 0) 75%), 
+        radial-gradient(at right top, #794aa2 0, rgba(121, 74, 162, 0) 57%);
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.gradient-primary-short {
+    background-image:-webkit-radial-gradient(50% top, rgba(84, 90, 182, 0.6) 0, rgba(84, 90, 182, 0) 75%), 
+        -webkit-radial-gradient(right top, #794aa2 0, rgba(121, 74, 162, 0) 57%);
+    background-image:radial-gradient(at 50% top, rgba(84, 90, 182, 0.6) 0, rgba(84, 90, 182, 0) 75%), 
+        radial-gradient(at right top, #794aa2 0, rgba(121, 74, 162, 0) 57%);
+    background-size:100% 1000px;
+}
+
+/* top nav styling */
+.navbar.navbar-inverse.navbar-trans {
+    background-color: rgba(2, 0, 49, 0.50);
+    border-color: rgba(215, 242, 245, .25);
+    height: 75px;
+    border: 1px;
+    margin-bottom: 0;
+    box-sizing: initial;
+}
+
+#bs-example-navbar-collapse-1 {
+        // Navbar expanded
+    @media (min-width: 767px){
+        color: rgba(0, 0, 0, 0);
+        }
+
+    //Navbar collapsed
+    @media (max-width: 767px){
+            background-color: rgba(250, 250, 250, 0.95);
+            position:relative;
+            z-index: 3;
+            a:link {
+                color: #221360;
+            }
+            a:visited {
+                color: #221360;
+            }
+            a:hover {
+                color: #543cb7;
+            }
+            a:active {
+                color: #957feb;
+            }
+        
+        }
+}
+
+//button to open collapsed top menu
+        button.navbar-toggle:hover,
+        button.navbar-toggle.collapsed:hover,
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+        border-color: rgba(250, 250, 250, 0.95);
+        background-color: rgba(250, 250, 250, 0.5);
+        }
+        button.navbar-toggle:active,
+        button.navbar-toggle.collapsed:active {
+        border-color: rgba(250, 250, 250, 0.95);
+        background-color: rgba(250, 250, 250, 0.7);
+        }
+        button.navbar-toggle:visited,
+        button.navbar-toggle.collapsed:visited,
+        button.navbar-toggle:link,
+        button.navbar-toggle.collapsed:link {
+        border-color: rgba(250, 250, 250, 0.95);
+        background-color: rgba(250, 250, 250, 0.3);
+        }
+
+
+.dropdown-menu {
+    background-color: rgba(250, 250, 250, 0.95)
+}
+
+#main {
+ margin:0 auto;
+ float:none;
+}
+
+.navbar-collapse {
+    // Navbar expanded
+    @media (min-width: 768px){
+       margin-top: 11px;    
+    }
+    //Navbar collapsed
+    @media (max-width: 768px){
+        margin-top: 19px;
+        border-radius: 4px;
+        padding-top: 12px;
+    }
+}
+
+.navbar-toggle {
+    margin-top: 19px;
+    border-color: rgba(255, 255, 255, 0.49);
+    
+}
+.button.navbar-toggle {
+    background-color: red;
+}
+
+/* styling that is set globally on the twitter page container */
+.container-fluid {
+    color: white;
+    h1 {font-size: 2.5em;}
+}
+
+/* sets the light background under content */
+.back-section1 {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* footer styling*/
+
+/* this adds additional styling for the footer */
+.nav-cont-foot { 
+    min-height: 40px;
+    max-height: 40px;
+    color: #9d9d9d;
+    width: 100%;
+}
+
+.nav-cont-foot {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 20px;
+}
+
+/* footer push components */
+.footer-push {
+    height: 40px;
+    clear: both;
+}
+
+html, body {
+    height: 100%;
+    margin-bottom: -40px;
+}
+
+.push-container {
+    min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin-bottom: -40px; /* the bottom margin is the negative value of the footer's height */
+}
+
+/* below sets the column count for the text on the home page*/
+.col {
+@media (min-width: 320px) {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+}
+@media (min-width: 480px) {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+@media (min-width: 1200px) {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}    
+}
+
+/* below sets the max width of the site */
+.container-fluid.max {
+    max-width: 1200px;
+    margin-bottom: 0px;
+}
+
+/* sets the width and centering for the slide show carousel */
+.car-max {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-car-max {
+    max-width: 530px;
+    border-bottom: -28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* styles for home page posting links, such as jobs */
+
+.glyphicon.glyphicon-briefcase.glyph-large {
+    font-size: 7em;
+    margin-top: 20px;
+}
+
+.well-rwp {
+    text-align: center;
+    background-color: rgba(215, 242, 245, .05);
+    border: 0px;
+    padding-left: 5px;
+    padding-right: 0px;
+    height: 215.256px;
+    margin-top: 15px;
+    min-width: 175px;
+}
+
+/* random styles */
+.vert-pad {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: rgba(2, 0, 49, 0.25);
+    min-height: 70px;
+    margin-top: -7px;
+    padding-top: 22px;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/glyphicons-halflings-regular.eot');
+  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+/* side contact menu link colors */
+.menu-list.contact-menu,
+.menu-list.contact-menu li{
+    a:link {
+        color: #221360;
+    }
+    a:visited {
+        color: #221360;
+    }
+    a:hover {
+        color: #543cb7;
+    }
+    a:active {
+        color: #957feb;
+    }
+}
+
